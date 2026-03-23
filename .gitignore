@@ -1,0 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (太大，不上传)
+data/
+dataset/
+
+# Results (可复现，不上传)
+results/
+
+# Models (可选)
+# 如果太大就忽略
+# models/
+
+# Logs
+*.log
