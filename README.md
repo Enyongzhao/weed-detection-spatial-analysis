@@ -95,7 +95,7 @@ These results indicate that the model achieves reasonable detection performance 
 
 ### 📊 Training Curves
 
-![Training Results](docs/images/training_results.png)
+![Training Results](docs/images/results.png)
 
 ---
 
