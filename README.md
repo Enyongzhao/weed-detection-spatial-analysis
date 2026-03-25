@@ -1,6 +1,6 @@
-# 🌱 Weed Detection & Spatial Distribution Analysis
+# 🌱 Weed Detection & Spatial Analysis for Precision Agriculture
 
-An end-to-end computer vision pipeline for detecting weeds in agricultural fields and analyzing their spatial distribution relative to crop rows.
+A computer vision system that not only detects weeds, but also analyzes their spatial distribution relative to crop rows using geometric modeling.
 
 ---
 
@@ -27,6 +27,21 @@ This project processes field videos and performs:
 * Used **tracking to eliminate duplicate detections across frames**
 
 ---
+
+## 💡 Key Innovation: Row Coordinate Mapping (RCM)
+
+Instead of only detecting weeds, this project introduces a spatial analysis method:
+
+- Crop rows are modeled using KMeans + RANSAC
+- Each weed is projected onto neighboring crop rows
+- A normalized position metric is computed:
+
+t = (d2 - d1) / (d1 + d2)
+
+This allows:
+- Quantitative analysis of weed distribution
+- Identification of weed concentration between rows
+- Potential applications in precision spraying
 
 ## 🏗️ Project Structure
 
