@@ -76,6 +76,43 @@ python src/analysis/multi_row_distribution.py
 ```
 python src/analysis/single_row_distribution.py
 ```
+## 📉 Model Performance
+
+The YOLOv8 model was trained on a custom weed/crop dataset and evaluated on a validation set.
+
+### Final Performance (Validation)
+
+| Metric    | Value |
+| --------- | ----- |
+| Precision | ~0.60 |
+| Recall    | ~0.50 |
+| mAP50     | ~0.55 |
+| mAP50-95  | ~0.22 |
+
+These results indicate that the model achieves reasonable detection performance given the limited dataset size.
+
+---
+
+### 📊 Training Curves
+
+![Training Results](docs/images/training_results.png)
+
+---
+
+### 📌 Observations
+
+* Training loss (box, cls, dfl) decreases steadily, indicating stable convergence
+* Validation loss follows a similar trend with minor fluctuations (expected for small datasets)
+* Precision and recall improve significantly in early epochs and stabilize after ~20 epochs
+* mAP50 shows consistent improvement, reaching ~0.55
+* mAP50-95 remains lower (~0.22), indicating room for improvement in localization accuracy
+
+---
+
+### 📈 Summary
+
+The model demonstrates stable learning behavior and produces reliable weed/crop detection results.
+Performance is limited mainly by dataset size, but is sufficient for downstream spatial analysis tasks.
 
 ---
 
