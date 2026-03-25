@@ -16,7 +16,9 @@ data/
 dataset/
 
 # Results (可复现，不上传)
-results/
+results/*
+!results/plots/
+!results/plots/**
 
 # Models (可选)
 # 如果太大就忽略
